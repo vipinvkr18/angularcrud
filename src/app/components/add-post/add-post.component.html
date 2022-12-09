@@ -1,0 +1,10 @@
+<form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+    <div>
+      <label>
+        Name:
+        <input formControlName="title" placeholder="Post Title">
+      </label>
+    </div>
+    <button type="submit">Add Post</button>
+  </form>
+  

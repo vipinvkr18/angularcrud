@@ -1,0 +1,16 @@
+<p>input works!</p>
+{{name}}
+<p>Output works!</p>
+
+<form [formGroup]="myForm" (ngSubmit) = "submit(myForm)">
+    <div>
+        <label>
+          Name:
+          <input formControlName="name" placeholder="Enter your name">
+        </label>
+      </div>
+      <button type="submit">Show Message</button>
+</form>
+
+<ng-content select="h3">
+</ng-content>
